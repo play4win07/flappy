@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Start Menu */
+#menu {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+#menu h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#menu h3 {
+  margin-top: 15px;
+  font-weight: normal;
+}
+
+#menu select,
+#menu button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#menu button {
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#menu button:hover {
+  background: #ffa733;
+}
+
+#avatars {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.2s;
+}
+
+.avatar.selected {
+  border-color: #ff9800;
+  transform: scale(1.1);
+}
+
+/* Full-screen game canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}

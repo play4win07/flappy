@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy Fire Deluxe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="menu">
+    <h1>🎮 Flappy Fire Deluxe</h1>
+    <h3>Select Theme:</h3>
+    <select id="themeSelect">
+      <option value="normal">Normal Theme</option>
+      <option value="freefire">Free Fire Theme</option>
+      <option value="instagram">Instagram Theme</option>
+    </select>
+
+    <h3>Select Avatar:</h3>
+    <div id="avatars">
+      <img src="sim.png" data-id="1" class="avatar selected" />
+      <img src="acp.png" data-id="2" class="avatar" />
+      <img src="amit.png" data-id="3" class="avatar" />
+    </div>
+
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="script.js"></script>
+
+  <link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+
+</body>
+</html>
